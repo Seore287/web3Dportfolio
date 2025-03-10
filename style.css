@@ -1,0 +1,452 @@
+@font-face {
+    font-family: logoFont;
+    src: url(assets/fonts/RetroVintage-Regular.otf),
+}
+
+
+body {
+    padding-bottom: 5px;
+    background-color: rgb(245, 164, 98);
+}
+
+.main_contents {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open sans', sans-serif; 
+}
+
+#main_3d_image {
+    background-image: url(assets/Logo.webp);
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+#main_text {
+    float: left;
+    margin: 5%;
+    width: 90%;
+    display: block;
+    background-color: rgba(110, 107, 107, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+#main_text h2 {
+    color: rgba(0,102,153,1);
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#main_text h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#main_text p {
+    font-size: 12px;
+    margin: 0px;
+    line-height: 1.2;
+} 
+
+.card {
+    border: 0px solid rgba(0,0,0,.125);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(245, 164, 98);
+}
+
+.logo {
+    margin-top: 3px;
+    font-family: 'logoFont', sans-serif;
+}
+
+.navbar_coca_cola {
+    background-color: #760003;
+    border-width: 0px;
+    min-height: 70px;
+}
+
+.navbar_coca_cola .navbar-brand {
+    color: rgb(255, 255, 255);
+    font-family:  'Open sans', sans-serif;
+ }
+    
+
+.navbar_coca_cola .navbar-brand:hover {
+    color: #006674;
+}
+
+.navbar_coca_cola .navbar-nav > li > a {
+    color: white;  
+    font-size: 1.5rem;
+    
+}
+
+.navbar_coca_cola .navbar-nav > li > a:hover, 
+.navbar_coca_cola .navbar-nav > li > a:focus {
+    color: #006674;  
+}
+
+.navbar_coca_cola .navbar-nav .nav-item {
+    margin-top: 10px;
+    color: #006674;
+    
+}
+
+
+.navbar_coca_cola .navbar-nav .nav-item > .active, 
+.navbar_coca_cola .navbar-nav > .active > a:hover, 
+.navbar_coca_cola .navbar-nav > .active > a:focus {
+    color:  #006674; 
+}
+
+.navbar_coca_cola .navbar-nav > li > a:hover, 
+.navbar_coca_cola  .navbar-nav > li > a:focus {
+    color: #006674;  
+}
+
+
+.navbar_coca_cola .navbar-toggler {
+    border-color: #93a9a4;
+}
+
+.navbar_coca_cola .navbar-toggler {
+    outline: none !important;
+}
+
+
+.dropdown-menu {
+    text-align: -webkit-left;
+    background-color: #63a4b5;
+    margin-top: 10px;
+}
+
+.dropdown-menu
+.dropdown-item {
+    color: #93a9a4;
+}
+
+.dropdown-menu
+.dropdown-item:hover {
+    color: #93a9a4;
+    background-color: #d7dfda;
+}
+
+/* CSS rule to style the footer */
+.footer {
+    color: #FFF;
+    background-color: #760003;
+    height: 50px;
+}
+
+.navbar-text > a {
+    color: rgb(255, 255, 255);
+    font-size: 8px;
+    text-decoration: none;
+}
+
+.navbar-text > p {
+    color: #d7dfda;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.copyright {
+    padding-top: 13px;
+}
+
+.social {
+    padding-top: 0px;
+}
+
+@media (min-width: 576px) {
+
+    body {
+        background-color: rgb(202, 181, 181);
+    }
+
+    #main_3d_image {
+        background-image: url(assets/Logo.webp);
+        background-repeat: no-repeat;
+        height: 288px;
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 7%;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        /* border-radius: .25rem;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(202, 181, 181);
+    }
+
+    .navbar_coca_cola {
+        background-color: grey; 
+        min-height: 90px;
+    }
+
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: #257600;
+        height: 60px;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        color: rgb(228, 75, 15);
+        font-size: 18px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+
+}
+
+
+@media (min-width: 768px) { 
+    
+    body {
+        background-color: rgb(218, 216, 148);
+    }
+
+    #main_3d_image {
+        background-image: url(assets/Logo.webp);
+        background-repeat: no-repeat;
+        height: 363px;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        /* border-radius: .25rem;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(218, 216, 148);
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: darkcyan;
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+    
+    /* ++++++++++++++++++++++++++LOGO+++++++++++++++++++++++*/
+    
+    /* CSS rule to style the mobile logo */
+
+    .logo {
+        margin-top: 3px;
+    }
+
+    .logo h1 {
+        font-family: CustomFont; 
+        font-size: 41px;
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: -15px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 2px;
+    }
+
+    .logo h2 {
+        font-family: CustomFont;
+        font-size: 43px;
+        margin-top: 5px;
+        margin-bottom: -15px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 3px;
+        float: left;
+    }
+
+    .logo h3 {
+        font-size: 31px;
+        margin-top: 5px;
+        margin-bottom: 3px;
+        padding-top: 0px;
+        padding-left: 0px;
+        float: left;
+    }
+
+    .logo p {
+        font-size: 10px;
+        margin-top: 45px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 8px;
+    }
+
+    .navbar_coca_cola {
+        background-color: grey; 
+        min-height: 90px;
+    }
+
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: #b890b1;
+        height: 60px;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        color: rgb(12, 5, 3);
+        font-size: 18px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)
+*/
+@media (min-width: 992px) { 
+    
+    body {
+        background-color: rgb(185, 185, 178);
+    }
+
+    #main_3d_image {
+        background-image: url(assets/Logo.webp);
+        background-repeat: no-repeat;
+        height: 800px;
+    }
+
+    #main_text {
+        float: right;
+        margin-top: 20%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: darkcyan;
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        /* border-radius: .25rem;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(185, 185, 178);
+    }
+
+    .logo {
+        margin-top: 7px;
+    }
+
+    .logo h1 {
+        font-family: cocaColaFont;
+        font-size: 59px;
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: -20px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .logo h2 {
+        font-family: cocaColaFont;
+        font-size: 65px;
+        margin-top: 7px;
+        margin-bottom: -25px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 6px;
+        float: left;
+    }
+
+    .logo h3 {
+        font-size: 40px;
+        margin-top: 15px;
+        margin-bottom: -5px;
+        padding-top: 0px;
+        padding-left: 0px;
+        float: left;
+    }
+
+    .logo p {
+        font-size: 14px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 65px;
+        padding-left: 12px;
+    }
+
+    .navbar_coca_cola {
+        background-color: grey; 
+        min-height: 120px;
+    }
+
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: grey;
+        height: 75px;
+    }
+
+    .navbar-text > a {
+        font-size: 15px;
+    }
+
+    .navbar-text > p {
+        color: rgb(12, 5, 3);
+        font-size: 23px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+}
