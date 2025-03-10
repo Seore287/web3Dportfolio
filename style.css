@@ -3,6 +3,11 @@
     src: url(assets/fonts/RetroVintage-Regular.otf),
 }
 
+@font-face {
+    font-family: navFont;
+    src: url(assets/fonts/Bacute.ttf),
+}
+
 
 body {
     padding-bottom: 5px;
@@ -63,7 +68,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
     margin-top: 3px;
-    font-family: 'logoFont', sans-serif;
 }
 
 .navbar_coca_cola {
@@ -74,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar_coca_cola .navbar-brand {
     color: rgb(255, 255, 255);
-    font-family:  'Open sans', sans-serif;
+    font-family: logoFont;
  }
     
 
@@ -96,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar_coca_cola .navbar-nav .nav-item {
     margin-top: 10px;
     color: #006674;
+    font-family: navFont;
     
 }
 
@@ -269,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .logo h1 {
-        font-family: CustomFont; 
+        font-family: logoFont; 
         font-size: 41px;
         margin: 0;
         margin-top: 0px;
@@ -278,26 +283,6 @@ h1, h2, h3, h4, h5, h6 {
         padding-top: 0px;
         padding-left: 0px;
         padding-right: 2px;
-    }
-
-    .logo h2 {
-        font-family: CustomFont;
-        font-size: 43px;
-        margin-top: 5px;
-        margin-bottom: -15px;
-        padding-top: 0px;
-        padding-left: 0px;
-        padding-right: 3px;
-        float: left;
-    }
-
-    .logo h3 {
-        font-size: 31px;
-        margin-top: 5px;
-        margin-bottom: 3px;
-        padding-top: 0px;
-        padding-left: 0px;
-        float: left;
     }
 
     .logo p {
@@ -372,7 +357,6 @@ h1, h2, h3, h4, h5, h6 {
 
     .card {
         border: 0px solid rgba(0,0,0,.125);
-        /* border-radius: .25rem;*/
         margin-top: 10px;
         margin-bottom: 10px;
         background-color: rgb(185, 185, 178);
@@ -383,7 +367,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .logo h1 {
-        font-family: cocaColaFont;
+        font-family: logoFont;
         font-size: 59px;
         margin: 0;
         margin-top: 0px;
@@ -392,34 +376,6 @@ h1, h2, h3, h4, h5, h6 {
         padding-top: 0px;
         padding-left: 0px;
         padding-right: 0px;
-    }
-
-    .logo h2 {
-        font-family: cocaColaFont;
-        font-size: 65px;
-        margin-top: 7px;
-        margin-bottom: -25px;
-        padding-top: 0px;
-        padding-left: 0px;
-        padding-right: 6px;
-        float: left;
-    }
-
-    .logo h3 {
-        font-size: 40px;
-        margin-top: 15px;
-        margin-bottom: -5px;
-        padding-top: 0px;
-        padding-left: 0px;
-        float: left;
-    }
-
-    .logo p {
-        font-size: 14px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding-top: 65px;
-        padding-left: 12px;
     }
 
     .navbar_coca_cola {
