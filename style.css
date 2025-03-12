@@ -8,6 +8,11 @@
     src: url(assets/fonts/Bacute.ttf),
 }
 
+@font-face {
+    font-family: mainFont;
+    src: url(assets/fonts/Champagne\ &\ Limousines.ttf),
+}
+
 
 body {
     padding-bottom: 5px;
@@ -28,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main_3d_image {
-    background-image: url(assets/Logo.webp);
+    background-image: url(assets/homeImage.jpg);
     background-repeat: no-repeat;
     height: 200px;
 }
@@ -177,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #main_3d_image {
-        background-image: url(assets/Logo.webp);
+        background-image: url(assets/homeImage.jpg);
         background-repeat: no-repeat;
         height: 288px;
     }
@@ -233,14 +238,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #main_3d_image {
-        background-image: url(assets/Logo.webp);
+        background-image: url(assets/homeImage.jpg);
         background-repeat: no-repeat;
         height: 363px;
     }
 
     .card {
         border: 0px solid rgba(0,0,0,.125);
-        /* border-radius: .25rem;*/
+        border-radius: .5rem;
         margin-top: 10px;
         margin-bottom: 10px;
         background-color: rgb(218, 216, 148);
@@ -298,10 +303,17 @@ h1, h2, h3, h4, h5, h6 {
         min-height: 90px;
     }
 
+    .container-fluid {
+        display: flex;
+        margin-top: auto;
+
+    }
+
     /* CSS rule to style the footer */
     .footer {
-        background-color: #b890b1;
+        background-color: #f0bb78;
         height: 60px;
+        
     }
 
     .navbar-text > a {
@@ -322,27 +334,22 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Large devices (desktops, 992px and up)
-*/
+/* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
-    
-    body {
-        background-color: rgb(185, 185, 178);
-    }
-
     #main_3d_image {
-        background-image: url(assets/Logo.webp);
+        background-image: url(assets/homeImage.jpg);
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         height: 800px;
     }
 
     #main_text {
-        float: right;
         margin-top: 20%;
     }
 
     #main_text h2 {
-        color: crimson;
+        color: white;
         font-size: 30px;
     }
     
@@ -354,12 +361,84 @@ h1, h2, h3, h4, h5, h6 {
     #main_text p {
         font-size: 15px;
     }
+    
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        z-index: 80;
+        border: none;
+        outline: none;
+        background-color: #a27b5c;
+        color: white;
+        cursor: pointer;
+        border-radius: 5%;
+        width: 50px;
+        height: 50px; 
+        text-align: center;
+        font-size: 16px; 
+        line-height: 20px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #myBtn:hover {
+        background-color: #dcd7c9;
+    }
 
     .card {
+        position: relative;
+        transition: all 0.3s ease-in-out;
         border: 0px solid rgba(0,0,0,.125);
-        margin-top: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card:hover {
+        transform: translateY(-10px) scale(1.05); 
+        box-shadow: 0px 20px 40px #543a14; 
+        color: #000;
+    }
+
+    .card-body {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .card-body h3 {
+        font-family: navFont;
+        font-size: 1.5rem;
         margin-bottom: 10px;
-        background-color: rgb(185, 185, 178);
+    }
+    
+    .card-body p {
+        font-family: mainFont;
+        font-size: 1.3rem;
+        color: #131010;
+    }
+
+    .card-body a {
+        font-size: 1rem;
+        padding: 15px;
+        color: #ffffff;
+    }
+    
+    .card-body .btn {
+        margin-top: 10px;
+    }
+
+    .card-body .custom {
+        font-family: navFont;
+        background-color: #16404d;
+    }
+
+    .card-body .custom:hover {
+        margin-top: 10px;
+        background-color: #a6cdc6;
     }
 
     .logo {
@@ -383,18 +462,19 @@ h1, h2, h3, h4, h5, h6 {
         min-height: 120px;
     }
 
-    /* CSS rule to style the footer */
     .footer {
-        background-color: grey;
+        background-color: #f0bb78;
         height: 75px;
     }
 
     .navbar-text > a {
         font-size: 15px;
+        font-family: logoFont;
+        display: inline-block;
     }
 
     .navbar-text > p {
-        color: rgb(12, 5, 3);
+        color: white;
         font-size: 23px;
     }
 
