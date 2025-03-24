@@ -253,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
 
     #main_text {
         float: right;
-        margin-top: 7%;
+        margin-top: 20px;
     }
 
     #main_text h2 {
@@ -345,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #main_text {
-        margin-top: 20%;
+        margin-top: 20px;
     }
 
     #main_text h2 {
