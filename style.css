@@ -47,7 +47,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 5%;
     width: 90%;
     display: block;
-    background-color: rgba(110, 107, 107, 0.6);
     padding: 10px;
     border-radius: 5px;
 }
@@ -314,7 +313,6 @@ h1, h2, h3, h4, h5, h6 {
 
     }
 
-    /* CSS rule to style the footer */
     .footer {
         background-color: #f0bb78;
         height: 60px;
@@ -350,12 +348,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #main_text {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     #main_text h2 {
-        color: white;
-        font-size: 30px;
+        color: rgb(0, 0, 0);
+        font-size: 40px;
         font-family: logoFont;
     }
     
@@ -365,8 +363,9 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     #main_text p {
-        font-size: 15px;
+        font-size: 25px;
         font-family: mainFont;
+        padding-top: 20px;
     }
     
     #myBtn {
@@ -407,7 +406,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .card:hover {
         transform: translateY(-10px) scale(1.05); 
-        box-shadow: 0px 20px 40px #543a14; 
+        box-shadow: 0px 20px 40px #6899f3; 
         color: #000;
     }
 
@@ -466,6 +465,18 @@ h1, h2, h3, h4, h5, h6 {
     .navbar_coca_cola {
         background-color: grey; 
         min-height: 120px;
+    }
+
+    .video-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .video-container iframe {
+        width: 560px;
+        height: 315px;
     }
 
     .footer {
