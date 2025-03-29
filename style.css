@@ -81,6 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar_coca_cola {
     background-color: #760003;
+    transition: background-color 0.3s ease-in-out;
     border-width: 0px;
     min-height: 70px;
 }
@@ -117,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar_coca_cola .navbar-nav .nav-item > .active, 
 .navbar_coca_cola .navbar-nav > .active > a:hover, 
 .navbar_coca_cola .navbar-nav > .active > a:focus {
-    color:  #006674; 
+    color:  #006674 !important; 
 }
 
 .navbar_coca_cola .navbar-nav > li > a:hover, 
@@ -404,6 +405,12 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 20px;
     }
 
+    .card img {
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
     .card:hover {
         transform: translateY(-10px) scale(1.05); 
         box-shadow: 0px 20px 40px #6899f3; 
@@ -440,11 +447,14 @@ h1, h2, h3, h4, h5, h6 {
     .card-body .custom {
         font-family: navFont;
         background-color: #16404d;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
     }
 
     .card-body .custom:hover {
         margin-top: 10px;
         background-color: #a6cdc6;
+        transform: scale(1.05)
     }
 
     .logo {
@@ -470,18 +480,20 @@ h1, h2, h3, h4, h5, h6 {
     .video-container {
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 15px;
         flex-wrap: wrap;
     }
 
     .video-container iframe {
-        width: 560px;
-        height: 315px;
+        width: 45%;
+        height: 300px;
+        border-radius: 10px;
     }
 
     .footer {
         color: #000000;
-        height: 75px;
+        padding: 20px;
+        text-align: center;
     }
 
     .navbar-text > a {
@@ -504,5 +516,14 @@ h1, h2, h3, h4, h5, h6 {
 
     .social {
         padding-top: 7px;
+    }
+
+    .social a {
+        margin: 0 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .social a:hover {
+        transform: scale(1.1);
     }
 }
