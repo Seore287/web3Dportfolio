@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About | Vintage Camera Showcase</title> 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style2.css">
-    </head>
-    <body>
-        <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Vintage Cameras Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Vintage Camera Showcase</a>
+            <a class="navbar-brand" href="index.html">Vintage Cameras</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,56 +25,46 @@
         </div>
     </nav>
 
-     <!-- Header Section -->
-     <header class="text-center bg-light p-5">
-        <h1>About This Website</h1>
-        <p class="lead">A deep dive into the design, modeling, and integration of this project.</p>
-    </header>
-
     <div class="container mt-5">
-        <!-- About the Website -->
+        <!-- About Portfolio -->
         <section>
-            <h2>About the Website</h2>
-            <p>This project is a showcase of vintage cameras, 
-                featuring interactive 3D models** created in Blender, 
-                high-quality renders, and detailed descriptions. 
-                The goal is to provide an immersive experience, 
-                allowing users to explore the beauty of classic cameras.</p>
+            <h2>About Portfolio</h2>
+            <p>This project is an interactive 3D web piece, built with Blender models and modern web technologies. 
+                It allows visitors to explore a collection of detailed 3D creations with immersive interactivity.</p>
         </section>
 
         <!-- 3D Models Section -->
         <section class="mt-5">
-            <h2>3D Models (Created in Blender)</h2>
-            <p>All 3D models were meticulously crafted in Blender, 
-                with attention to detail in modeling, texturing, and rendering.</p>
+            <h2>3D Models</h2>
+            <p>Each model in this gallery was designed in Blender, with careful attention to detail, 
+                texturing, and lighting.</p>
 
             <div class="row">
                 <div class="col-md-6">
-                    <img src="assets/camera_model_1.jpg" alt="3D Model 1" class="img-fluid rounded">
-                    <p class="mt-2">A high-poly model of a Fujica Compact camera, textured in Substance Painter.</p>
+                    <img src="assets/model1.jpg" alt="3D Model 1" class="img-fluid rounded gallery-img" onclick="openLightbox('assets/model1.jpg')">
+                    <p class="mt-2">A high-detail statue model, textured with procedural shaders.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="assets/camera_model_2.jpg" alt="3D Model 2" class="img-fluid rounded">
-                    <p class="mt-2">This classic Kodak film camera was modeled and UV-mapped in Blender, 
-                        then textured using procedural shaders.</p>
+                    <img src="assets/model2.jpg" alt="3D Model 2" class="img-fluid rounded gallery-img" onclick="openLightbox('assets/model2.jpg')">
+                    <p class="mt-2">A stylized fantasy sculpture, built for a virtual museum scene.</p>
                 </div>
             </div>
         </section>
 
-         <!-- Image Gallery -->
-         <section class="mt-5">
+        <!-- Image Gallery with Lightbox -->
+        <section class="mt-5">
             <h2>Image Gallery</h2>
-            <p>Here are some high-quality renders of the 3D models:</p>
+            <p>Click on the images to expand:</p>
 
             <div class="row">
                 <div class="col-md-4">
-                    <img src="assets/gallery1.jpg" class="img-fluid rounded shadow gallery-img" alt="Render 1">
+                    <img src="assets/gallery1.jpg" class="img-fluid rounded shadow gallery-img" onclick="openLightbox('assets/gallery1.jpg')" alt="Render 1">
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/gallery2.jpg" class="img-fluid rounded shadow gallery-img" alt="Render 2">
+                    <img src="assets/gallery2.jpg" class="img-fluid rounded shadow gallery-img" onclick="openLightbox('assets/gallery2.jpg')" alt="Render 2">
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/gallery3.jpg" class="img-fluid rounded shadow gallery-img" alt="Render 3">
+                    <img src="assets/gallery3.jpg" class="img-fluid rounded shadow gallery-img" onclick="openLightbox('assets/gallery3.jpg')" alt="Render 3">
                 </div>
             </div>
         </section>
@@ -81,26 +72,32 @@
         <!-- Design and Integration -->
         <section class="mt-5">
             <h2>Design & Integration</h2>
-            <p>The website is built using HTML, CSS, JavaScript, and Bootstrap, ensuring a 
-                modern and responsive layout. Three.js is used for rendering interactive 3D models, 
-                and Bootstrap provides a clean structure.</p>
+            <p>The website was designed with HTML, CSS, JavaScript, and Bootstrap,
+                 ensuring a modern, responsive layout with Three.js for 3D interactions.</p>
 
             <ul>
-                <li>✅ Modeling: Created in Blender, optimized for web display.</li>
-                <li>✅ Texturing: Substance Painter & procedural shaders.</li>
-                <li>✅ Web Integration: Three.js for 3D models, Bootstrap for UI.</li>
-                <li>✅ Interactivity: Lightbox gallery, smooth animations.</li>
+                <li>🎨 3D Modeling: Blender</li>
+                <li>🖌 Texturing: Substance Painter, procedural shaders</li>
+                <li>🌐 Web Technologies: Three.js, Bootstrap</li>
+                <li>✨ Interactivity: Lightbox, smooth animations</li>
             </ul>
         </section>
     </div>
 
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+    </div>
+
     <!-- Footer -->
     <footer class="text-center mt-5 bg-dark text-white p-3">
-        <p>© 2025 Vintage Camera Showcase | Designed by Oluwaseorefunmi Soyannwo</p>
+        <p>© 2025 3D Web Portfolio | Designed by Oluwaseorefunmi Soyannwo</p>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    </body>
+
+</body>
 </html>
