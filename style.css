@@ -79,35 +79,35 @@ h1, h2, h3, h4, h5, h6 {
     font-family: mainFont2; 
 }
 
-.navbar_coca_cola {
+.navbar_cameras {
     background-color: #760003;
     transition: background-color 0.3s ease-in-out;
     border-width: 0px;
     min-height: 70px;
 }
 
-.navbar_coca_cola .navbar-brand {
+.navbar_cameras .navbar-brand {
     color: rgb(255, 255, 255);
     font-family: logoFont;
  }
     
 
-.navbar_coca_cola .navbar-brand:hover {
+.navbar_cameras .navbar-brand:hover {
     color: #006674;
 }
 
-.navbar_coca_cola .navbar-nav > li > a {
+.navbar_cameras .navbar-nav > li > a {
     color: white;  
     font-size: 1.5rem;
     
 }
 
-.navbar_coca_cola .navbar-nav > li > a:hover, 
-.navbar_coca_cola .navbar-nav > li > a:focus {
+.navbar_cameras .navbar-nav > li > a:hover, 
+.navbar_cameras .navbar-nav > li > a:focus {
     color: #006674;  
 }
 
-.navbar_coca_cola .navbar-nav .nav-item {
+.navbar_cameras .navbar-nav .nav-item {
     margin-top: 10px;
     color: #006674;
     font-family: navFont;
@@ -115,23 +115,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.navbar_coca_cola .navbar-nav .nav-item > .active, 
-.navbar_coca_cola .navbar-nav > .active > a:hover, 
-.navbar_coca_cola .navbar-nav > .active > a:focus {
+.navbar_cameras .navbar-nav .nav-item > .active, 
+.navbar_cameras .navbar-nav > .active > a:hover, 
+.navbar_cameras .navbar-nav > .active > a:focus {
     color:  #006674 !important; 
 }
 
-.navbar_coca_cola .navbar-nav > li > a:hover, 
-.navbar_coca_cola  .navbar-nav > li > a:focus {
+.navbar_cameras .navbar-nav > li > a:hover, 
+.navbar_cameras  .navbar-nav > li > a:focus {
     color: #006674;  
 }
 
 
-.navbar_coca_cola .navbar-toggler {
+.navbar_cameras .navbar-toggler {
     border-color: #93a9a4;
 }
 
-.navbar_coca_cola .navbar-toggler {
+.navbar_cameras .navbar-toggler {
     outline: none !important;
 }
 
@@ -205,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
         background-color: rgb(202, 181, 181);
     }
 
-    .navbar_coca_cola {
+    .navbar_cameras {
         background-color: grey; 
         min-height: 90px;
     }
@@ -275,8 +275,6 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 15px;
     }
     
-    /* ++++++++++++++++++++++++++LOGO+++++++++++++++++++++++*/
-    
     /* CSS rule to style the mobile logo */
 
     .logo {
@@ -304,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 8px;
     }
 
-    .navbar_coca_cola {
+    .navbar_cameras {
         min-height: 90px;
     }
 
@@ -448,21 +446,17 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .logo {
-        margin-top: 7px;
+        margin-top: 10px;
     }
 
     .logo h1 {
         font-family: mainFont2;
         font-size: 59px;
-        margin: 0;
-        margin-top: 10px;
+        margin-bottom: 20px;
         float: left;
-        padding-top: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
     }
 
-    .navbar_coca_cola {
+    .navbar_cameras {
         background-color: grey; 
         min-height: 120px;
     }
