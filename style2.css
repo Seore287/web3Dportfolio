@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #333;
+}
+
+.gallery-img {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
