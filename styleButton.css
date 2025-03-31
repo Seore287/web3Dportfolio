@@ -1,0 +1,45 @@
+.container-fluid, .row, .col-sm-10 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: visible;
+}
+
+#btn {
+    background: rgb(134, 8, 245);
+    padding: 15px;
+    font-family: arial;
+}
+
+#toggleWireframe {
+    background: rgb(36, 209, 209);
+    padding: 15px;
+    font-family: arial;
+}
+
+
+#Rotate {
+    background: rgb(245, 221, 4);
+    padding: 15px;
+    font-family: arial;
+}
+
+
+#switchModel {
+    background: rgb(5, 74, 246);
+    padding: 15px;
+    font-family: arial;
+}
+
+#playSecondAnimation {
+    background: rgb(90, 236, 5);
+    padding: 15px;
+    font-family: arial;
+}
+
+#threeContainer {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+}
